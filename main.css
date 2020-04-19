@@ -14,7 +14,6 @@ body {
 }
 
 .head {
-  margin-top: 50px;
   text-align: center;
 }
 
@@ -36,8 +35,8 @@ body {
 .slideshow {
   position: relative;
   margin: 25px auto;
-  width: 600px;
-  height: 400px;
+  width: 700px;
+  height: 450px;
   list-style: none;
 }
 
@@ -173,7 +172,7 @@ body {
   }
 
   .main-header {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .slideshow {
