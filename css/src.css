@@ -46,42 +46,38 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
+  background-position: center;
   background-size: cover;
   background-repeat: none;
   opacity: 0;
-  animation: imageAnimation 24s linear infinite 0s;
+  animation: imageAnimation 16s infinite;
 }
 
 .slideshow li:nth-child(1) {
-  background-image: url('../images/img1.jpg');
+  background-image: url('../images/tow-truck.jpg');
 }
 
 .slideshow li:nth-child(2) {
-  background-image: url('../images/img2.jpg');
+  background-image: url('../images/jcb-170.webp');
   animation-delay: 6s;
 }
 
 .slideshow li:nth-child(3) {
-  background-image: url('../images/img3.jpg');
-  animation-delay: 12s;
-}
-
-.slideshow li:nth-child(4) {
-  background-image: url('../images/img4.jpg');
-  animation-delay: 18s;
+  background-image: url('../images/bobcat-e20.jpg');
+  animation-delay: 10s;
 }
 
 @-webkit-keyframes imageAnimation {
   0% {
     opacity: 0;
   }
-  12.5% {
+  10% {
     opacity: 1;
   }
-  25% {
+  50% {
     opacity: 1;
   }
-  37.5% {
+  66% {
     opacity: 0;
   }
   100% {
@@ -91,16 +87,14 @@ body {
 @keyframes imageAnimation {
   0% {
     opacity: 0;
-    animation-timing-function: ease-in;
   }
-  12.5% {
-    opacity: 1;
-    animation-timing-function: ease-out;
-  }
-  25% {
+  10% {
     opacity: 1;
   }
-  37.5% {
+  50% {
+    opacity: 1;
+  }
+  66% {
     opacity: 0;
   }
   100% {
