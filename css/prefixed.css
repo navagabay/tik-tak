@@ -1,4 +1,9 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 
 body {
   margin: 0;
@@ -8,102 +13,22 @@ body {
 
 #basad {
   margin: 7.5px;
+  color: white;
 }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.head {
-  text-align: center;
-}
-
-.main-header {
-  font-size: 50px;
-  font-weight: normal;
-}
-
-.description {
-  margin-top: 25px;
-}
-
-.description-list {
-  margin: 0 60px;
-  text-align: right;
-}
-
-.slideshow {
-  position: relative;
-  margin: 25px auto;
-  width: 700px;
-  height: 450px;
-  list-style: none;
-}
-
-.slideshow li {
-  position: absolute;
+video {
+  z-index: -1;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
+}
+
+img {
   width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: none;
-  opacity: 0;
-  -webkit-animation: imageAnimation 16s infinite;
-  animation: imageAnimation 16s infinite;
-}
-
-.slideshow li:nth-child(1) {
-  background-image: url('../images/tow-truck.jpg');
-}
-
-.slideshow li:nth-child(2) {
-  background-image: url('../images/jcb-170.webp');
-  -webkit-animation-delay: 6s;
-  animation-delay: 6s;
-}
-
-.slideshow li:nth-child(3) {
-  background-image: url('../images/bobcat-e20.jpg');
-  -webkit-animation-delay: 10s;
-  animation-delay: 10s;
-}
-
-@-webkit-keyframes imageAnimation {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  66% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes imageAnimation {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  66% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 .contact {
@@ -136,19 +61,6 @@ body {
 }
 
 @media (max-width: 576px) {
-  .head {
-    margin-top: 25px;
-  }
-
-  .main-header {
-    font-size: 28px;
-  }
-
-  .slideshow {
-    width: 80vw;
-    height: 200px;
-  }
-
   .phone {
     font-size: 20px;
   }
