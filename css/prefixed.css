@@ -11,11 +11,6 @@ body {
   color: rgb(40, 40, 40);
 }
 
-#basad {
-  margin: 7.5px;
-  color: white;
-}
-
 video {
   z-index: -1;
   -o-object-fit: cover;
@@ -29,6 +24,7 @@ video {
 
 img {
   width: 100%;
+  margin-top: 5vh;
 }
 
 .contact {
@@ -61,6 +57,10 @@ img {
 }
 
 @media (max-width: 576px) {
+  img {
+    margin-top: 12.5vh;
+  }
+
   .phone {
     font-size: 20px;
   }
